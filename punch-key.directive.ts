@@ -13,8 +13,8 @@ import { Directive, ElementRef, Renderer2, Input } from '@angular/core';
 export class PunchKeyDirective {
   
   @Input() targetText: string;  
-  @Input() delay: number;       // Number of milliseconds between each character.
-  initialDelayInMillis = 500;
+  @Input() delay: number;       // Number of milliseconds between each character. This is set in the template.
+  initialDelayInMillis = 500;   // Number of milliseconds to wait before starting.
   
   constructor(element: ElementRef, renderer: Renderer2) {
     setTimeout(() => this.initiatePunchText(element, renderer), this.initialDelayInMillis); 
