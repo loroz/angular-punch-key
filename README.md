@@ -1,5 +1,5 @@
 # angular-punch-key
-Self-contained Angular Attribute Directive that appends characters, one by one, to the designated HTML element at the desired rate of speed.
+Entirely self-contained Angular Attribute Directive that appends characters, one by one, to the designated HTML element at the desired rate of speed.
 
 Sample: 
 https://imgur.com/a/IgKHVkO
@@ -16,8 +16,8 @@ To Use:
   ]...
 ```
 
-3) Add the directive to your template. Be sure to specify the text to display (targetText) and the delay between each character (delay):
+3) Add the directive to your template. Be sure to specify the text to display (targetText), the initial delay before beginning (initialDelayInMillis), and the delay between each character (delayBetweenChars):
 ```
-<p appPunchKey [targetText]="'The future is now'" [delay]="'100'"></p> 
+<p appPunchKey [targetText]="'The future is now'" [initialDelayInMillis]="'2000'" [delayBetweenChars]="'100'"></p> 
 ```
 4) Enjoy! 
