@@ -2,7 +2,7 @@ import { Directive, ElementRef, Renderer2, Input } from '@angular/core';
 
 /**
  * Example Usage In Template:
- *  <p appPunchKey [targetText]="'The future is now'" [delay]=""'100'""></p> 
+ *  <p appPunchKey [targetText]="'The future is now'" [delay]="'100'"></p> 
  * 
  * Note the use of single quotes inside the double quotes for each of the attribute values.
  */
